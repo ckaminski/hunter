@@ -32,7 +32,7 @@ matrix:
   include:
     # Linux {
     - os: linux
-      env: PROJECT_DIR=examples/chaiscript TOOLCHAIN=gcc-cxx14-c11
+      env: COMPILER_NAME=gcc CXX=g++-5 CC=gcc-5 PROJECT_DIR=examples/chaiscript TOOLCHAIN=gcc-cxx14-c11
     #- os: linux
     # env: PROJECT_DIR=examples/chaiscript TOOLCHAIN=clang-libstdcxx
     #- os: linux
