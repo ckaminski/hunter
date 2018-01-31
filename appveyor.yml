@@ -8,6 +8,8 @@ environment:
 
   matrix:
     # Note: 'default' toolchain is the same as 'vs-14-2015'
+    - TOOLCHAIN: "vs-15-2017-cxx17"
+      PROJECT_DIR: examples\chaiscript
 
     - TOOLCHAIN: "ninja-vs-12-2013-win64"
       PROJECT_DIR: examples\chaiscript
