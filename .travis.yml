@@ -20,6 +20,8 @@ addons:
 
       - g++-5
       - gcc-5
+      - g++-7
+      - gcc-7
 
 dist:
   - trusty
@@ -33,6 +35,10 @@ matrix:
     # Linux {
     - os: linux
       env: PROJECT_DIR=examples/chaiscript TOOLCHAIN=gcc-5-cxx14-c11
+    - os: linux
+      env: PROJECT_DIR=examples/chaiscript TOOLCHAIN=gcc-7-cxx17
+    - os: linux
+      env: PROJECT_DIR=examples/chaiscript TOOLCHAIN=clang-5-cxx14
 
     - os: linux
       env: PROJECT_DIR=examples/chaiscript TOOLCHAIN=analyze
