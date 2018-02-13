@@ -36,6 +36,7 @@ environment:
     - TOOLCHAIN: "vs-15-2017-cxx17"
       PROJECT_DIR: examples\chaiscript
 
+
 install:
   # Python 3
   - cmd: set PATH=C:\Python34-x64;C:\Python34-x64\Scripts;%PATH%
