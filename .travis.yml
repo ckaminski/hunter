@@ -33,14 +33,14 @@ matrix:
     # Linux {
     - os: linux
       env: PROJECT_DIR=examples/chaiscript TOOLCHAIN=gcc-cxx14-c11
-    #- os: linux
-    # env: PROJECT_DIR=examples/chaiscript TOOLCHAIN=clang-libstdcxx
-    #- os: linux
-    #  env: PROJECT_DIR=examples/chaiscript TOOLCHAIN=gcc-5
-    #- os: linux
-    #  env: PROJECT_DIR=examples/chaiscript TOOLCHAIN=android-ndk-r10e-api-19-armeabi-v7a-neon
-    #- os: linux
-    #  env: PROJECT_DIR=examples/chaiscript TOOLCHAIN=android-ndk-r15c-api-21-armeabi-v7a-neon-clang-libcxx
+    - os: linux
+     env: PROJECT_DIR=examples/chaiscript TOOLCHAIN=clang-libstdcxx
+    - os: linux
+      env: PROJECT_DIR=examples/chaiscript TOOLCHAIN=gcc-5
+    - os: linux
+      env: PROJECT_DIR=examples/chaiscript TOOLCHAIN=android-ndk-r10e-api-19-armeabi-v7a-neon
+    - os: linux
+      env: PROJECT_DIR=examples/chaiscript TOOLCHAIN=android-ndk-r15c-api-21-armeabi-v7a-neon-clang-libcxx
     - os: linux
       env: PROJECT_DIR=examples/chaiscript TOOLCHAIN=analyze
     - os: linux
