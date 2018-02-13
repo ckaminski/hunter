@@ -42,7 +42,7 @@ matrix:
     - os: linux
       env: PROJECT_DIR=examples/chaiscript TOOLCHAIN=gcc-cxx14-c11
     - os: linux
-     env: PROJECT_DIR=examples/chaiscript TOOLCHAIN=clang-libstdcxx
+      env: PROJECT_DIR=examples/chaiscript TOOLCHAIN=clang-libstdcxx
     - os: linux
       env: PROJECT_DIR=examples/chaiscript TOOLCHAIN=gcc-5
     - os: linux
