@@ -41,14 +41,16 @@ matrix:
       env: PROJECT_DIR=examples/chaiscript TOOLCHAIN=clang-5-cxx14
     - os: linux
       env: PROJECT_DIR=examples/chaiscript TOOLCHAIN=gcc-cxx14-c11
-    - os: linux
-      env: PROJECT_DIR=examples/chaiscript TOOLCHAIN=clang-libstdcxx
-    - os: linux
-      env: PROJECT_DIR=examples/chaiscript TOOLCHAIN=gcc-5
-    - os: linux
-      env: PROJECT_DIR=examples/chaiscript TOOLCHAIN=android-ndk-r10e-api-19-armeabi-v7a-neon
-    - os: linux
-      env: PROJECT_DIR=examples/chaiscript TOOLCHAIN=android-ndk-r15c-api-21-armeabi-v7a-neon-clang-libcxx
+# https://travis-ci.org/ckaminski/hunter/builds/341150545
+# No C++14 toolchains
+#    - os: linux
+#      env: PROJECT_DIR=examples/chaiscript TOOLCHAIN=clang-libstdcxx
+#    - os: linux
+#      env: PROJECT_DIR=examples/chaiscript TOOLCHAIN=gcc-5
+#    - os: linux
+#      env: PROJECT_DIR=examples/chaiscript TOOLCHAIN=android-ndk-r10e-api-19-armeabi-v7a-neon
+#    - os: linux
+#      env: PROJECT_DIR=examples/chaiscript TOOLCHAIN=android-ndk-r15c-api-21-armeabi-v7a-neon-clang-libcxx
     - os: linux
       env: PROJECT_DIR=examples/chaiscript TOOLCHAIN=analyze
     - os: linux
@@ -60,12 +62,14 @@ matrix:
     # }
 
     # OSX {
-    - os: osx
-      env: PROJECT_DIR=examples/chaiscript TOOLCHAIN=libcxx
-    - os: osx
-      env: PROJECT_DIR=examples/chaiscript TOOLCHAIN=osx-10-12
-    - os: osx
-      env: PROJECT_DIR=examples/chaiscript TOOLCHAIN=ios-nocodesign-10-3
+# https://travis-ci.org/ckaminski/hunter/builds/341150545
+# No C++14 toolchains
+#    - os: osx
+#      env: PROJECT_DIR=examples/chaiscript TOOLCHAIN=libcxx
+#    - os: osx
+#      env: PROJECT_DIR=examples/chaiscript TOOLCHAIN=osx-10-12
+#    - os: osx
+#      env: PROJECT_DIR=examples/chaiscript TOOLCHAIN=ios-nocodesign-10-3
     # }
 
 install:
