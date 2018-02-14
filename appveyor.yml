@@ -8,33 +8,35 @@ environment:
 
   matrix:
     # Note: 'default' toolchain is the same as 'vs-14-2015'
+# https://ci.appveyor.com/project/ckaminski/hunter/build/1.0.17
+# No C++14 support1
+#    - TOOLCHAIN: "ninja-vs-12-2013-win64"
+#      PROJECT_DIR: examples\chaiscript
 
-    - TOOLCHAIN: "ninja-vs-12-2013-win64"
-      PROJECT_DIR: examples\chaiscript
+#    - TOOLCHAIN: "nmake-vs-12-2013-win64"
+#      PROJECT_DIR: examples\chaiscript
 
-    - TOOLCHAIN: "nmake-vs-12-2013-win64"
-      PROJECT_DIR: examples\chaiscript
+#    - TOOLCHAIN: "vs-12-2013-win64"
+#      PROJECT_DIR: examples\chaiscript
 
-    - TOOLCHAIN: "vs-12-2013-win64"
-      PROJECT_DIR: examples\chaiscript
+#    - TOOLCHAIN: "vs-12-2013-xp"
+#      PROJECT_DIR: examples\chaiscript
 
-    - TOOLCHAIN: "vs-12-2013-xp"
-      PROJECT_DIR: examples\chaiscript
-
-    - TOOLCHAIN: "vs-12-2013"
-      PROJECT_DIR: examples\chaiscript
+#    - TOOLCHAIN: "vs-12-2013"
+#      PROJECT_DIR: examples\chaiscript
 
     - TOOLCHAIN: "vs-14-2015"
       PROJECT_DIR: examples\chaiscript
 
-    - TOOLCHAIN: "mingw"
-      PROJECT_DIR: examples\chaiscript
+#    - TOOLCHAIN: "mingw"
+#      PROJECT_DIR: examples\chaiscript
 
-    - TOOLCHAIN: "msys"
-      PROJECT_DIR: examples\chaiscript
+#    - TOOLCHAIN: "msys"
+#      PROJECT_DIR: examples\chaiscript
 
-    - TOOLCHAIN: "vs-15-2017-cxx17"
-      PROJECT_DIR: examples\chaiscript
+# Missing build v141 files.
+#    - TOOLCHAIN: "vs-15-2017-cxx17"
+#      PROJECT_DIR: examples\chaiscript
 
 
 install:
