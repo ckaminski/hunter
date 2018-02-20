@@ -76,7 +76,7 @@ install:
   # Info about OS
   - uname -a
   - if [ "$CXX" = "g++" ]; then export CXX="g++-5" CC="gcc-5"; fi
-  - which g++-5.0
+  - whereis g++-5.0
 
   # Disable autoupdate
   # * https://github.com/Homebrew/brew/blob/7d31a70373edae4d8e78d91a4cbc05324bebc3ba/Library/Homebrew/manpages/brew.1.md.erb#L202
