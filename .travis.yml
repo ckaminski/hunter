@@ -1,7 +1,7 @@
 # OSX/Linux (https://github.com/travis-ci-tester/toolchain-table)
 
 # Workaround for https://github.com/travis-ci/travis-ci/issues/8363
-language: 
+language:
   - minimal
 
 # Container-based infrastructure (Linux)

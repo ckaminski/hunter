@@ -38,10 +38,8 @@ environment:
       TOOLCHAIN: "mingw-cxx14"
       PROJECT_DIR: examples\chaiscript
 
-    - APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
-      TOOLCHAIN: "msys-cxx14"
+    - TOOLCHAIN: "msys-cxx14"
       PROJECT_DIR: examples\chaiscript
-
 
 # https://ci.appveyor.com/project/ckaminski/hunter/build/job/ek2lbydvxyml7s6e
 # Did not test if ChaiScript is C++17 compatible - ignoring build
