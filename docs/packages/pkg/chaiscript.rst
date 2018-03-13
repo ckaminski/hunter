@@ -17,14 +17,17 @@ ChaiScript
 
 .. literalinclude:: /../examples/chaiscript/CMakeLists.txt
   :language: cmake
+  :start-after: # DOCUMENTATION_START {
+  :end-before: # DOCUMENTATION_END }
 
 Requirements
 ============
 - C++14 
 - Boost : Threads 
 
-Options
-=======
+
+Options (Set by Hunter)
+=======================
 
 - MULTITHREAD_SUPPORT_ENABLED: TRUE
 - BUILD_MODULES:  TRUE
