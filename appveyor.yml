@@ -42,10 +42,7 @@ install:
   # Install latest Polly toolchains and scripts
   - cmd: appveyor DownloadFile https://github.com/ruslo/polly/archive/master.zip
   - cmd: 7z x master.zip
-  - cmd: dir /s c:\project\hunter\_ci\cmake
-  - cmd: dir /s c:\project\hunter\_ci\cmake\share
-  - cmd: dir /s c:\project\hunter\_ci\cmake\share\cmake-3.11
-  - cmd: dir /s c:\project\hunter\_ci\cmake\share\cmake-3.11\Modules
+  - cmd: dir -s c:\project\hunter\_ci\cmake
   - cmd: cat %cd%\_ci\cmake\share\cmake-3.11\Modules\FindThreads.cmake
 
   - cmd: set POLLY_ROOT=%cd%\polly-master
