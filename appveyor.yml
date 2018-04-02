@@ -47,6 +47,7 @@ install:
   - cmd: dir /s c:\project\hunter\_ci\cmake\share\cmake-3.11
   - cmd: dir /s c:\project\hunter\_ci\cmake\share\cmake-3.11\Modules
   - cmd: cat %cd%\_ci\cmake\share\cmake-3.11\Modules\FindThreads.cmake
+
   - cmd: set POLLY_ROOT=%cd%\polly-master
 
   # Install dependencies (CMake, Ninja)
