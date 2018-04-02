@@ -63,6 +63,8 @@ install:
   # MSYS2 location
   - cmd: set MSYS_PATH=C:\msys64\usr\bin
 
+  - cmd: type %cd%\_ci\cmake\share\Modules\FindThreads.cmake
+
   # Visual Studio 15 2017: Mimic behavior of older versions
   - cmd: set VS150COMNTOOLS=C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\Tools
 
