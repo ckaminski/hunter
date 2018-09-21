@@ -42,6 +42,9 @@ install:
   # Install latest Polly toolchains and scripts
   - cmd: appveyor DownloadFile https://github.com/ruslo/polly/archive/master.zip
   - cmd: 7z x master.zip
+  - cmd: dir -s c:\project\hunter\_ci\cmake
+  - cmd: cat %cd%\_ci\cmake\share\cmake-3.11\Modules\FindThreads.cmake
+
   - cmd: set POLLY_ROOT=%cd%\polly-master
 
   # Install dependencies (CMake, Ninja)
@@ -62,6 +65,7 @@ install:
 
   # MSYS2 location
   - cmd: set MSYS_PATH=C:\msys64\usr\bin
+
 
   # Visual Studio 15 2017: Mimic behavior of older versions
   - cmd: set VS150COMNTOOLS=C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\Tools
