@@ -38,13 +38,11 @@ install:
 
   # Install Python package 'requests'
   - cmd: pip install requests
+  - cmd: pip install gitpython
 
   # Install latest Polly toolchains and scripts
   - cmd: appveyor DownloadFile https://github.com/ruslo/polly/archive/master.zip
   - cmd: 7z x master.zip
-  - cmd: dir -s c:\project\hunter\_ci\cmake
-  - cmd: cat %cd%\_ci\cmake\share\cmake-3.11\Modules\FindThreads.cmake
-
   - cmd: set POLLY_ROOT=%cd%\polly-master
 
   # Install dependencies (CMake, Ninja)
@@ -55,6 +53,11 @@ install:
   - cmd: set PATH=%cd%\_ci\ninja;%PATH%
 
   - cmd: git submodule update --init --recursive
+
+  # Save git.exe in HUNTER_GIT_EXECUTABLE for upload
+  # * https://docs.hunter.sh/en/latest/reference/user-variables.html#hunter-git-executable
+  # Variable will be used in CMake so it's okay to use Unix style '/'
+  - cmd: set HUNTER_GIT_EXECUTABLE=C:/Program Files/Git/bin/git.exe
 
   # Remove entry with sh.exe from PATH to fix error with MinGW toolchain
   # (For MinGW make to work correctly sh.exe must NOT be in your path)
